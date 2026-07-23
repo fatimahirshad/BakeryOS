@@ -114,9 +114,9 @@ CREATE DATABASE bakeryos_db;
 6. Create a `.env` file
 
 ```env
-DATABASE_URL=postgresql://postgres:YOUR_PASSWORD@localhost:5432/bakeryos_db
+DATABASE_URL=postgresql://postgres:12345@localhost:5432/bakeryos_db
 
-SECRET_KEY=your_secret_key
+SECRET_KEY=12345
 ALGORITHM=HS256
 ACCESS_TOKEN_EXPIRE_MINUTES=30
 ```
@@ -147,8 +147,9 @@ http://127.0.0.1:8000/docs
 * [x] Database Configuration
 * [x] Alembic Setup
 * [x] Role Management (CRUD)
-* [ ] Authentication (JWT)
-* [ ] User Management
+* [x] Authentication (JWT)
+* [x] User Management (CRUD)
+* [x] Role-Based Authorization
 * [ ] Suppliers
 * [ ] Purchases
 * [ ] Ingredient Inventory
