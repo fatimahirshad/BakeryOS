@@ -44,7 +44,6 @@ def update_role(
             status_code=status.HTTP_404_NOT_FOUND,
             detail="Role not found"
         )
-
     return RoleService.update_role(db, role, role_data)
 
 
@@ -57,5 +56,7 @@ def delete_role(role_id: int, db: Session = Depends(get_db)):
             status_code=status.HTTP_404_NOT_FOUND,
             detail="Role not found"
         )
-
     RoleService.delete_role(db, role)
+    return {
+        "message": "Role deleted successfully."
+    }

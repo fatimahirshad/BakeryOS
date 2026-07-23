@@ -8,7 +8,7 @@ class RoleCreate(BaseModel):
 
 
 class RoleUpdate(BaseModel):
-    name: str
+    name: str | None = None
     description: str | None = None
 
 
@@ -17,6 +17,7 @@ class RoleResponse(BaseModel):
     name: str
     description: str | None
     created_at: datetime
+    updated_at: datetime
 
     class Config:
         from_attributes = True
