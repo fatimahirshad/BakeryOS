@@ -144,22 +144,24 @@ http://127.0.0.1:8000/docs
 ## Current Progress
 
 * [x] Project Setup
-* [x] Database Configuration
-* [x] Alembic Setup
+* [x] Database Configuration (PostgreSQL + SQLAlchemy)
+* [x] Alembic Setup & Migrations
 * [x] Role Management (CRUD)
 * [x] Authentication (JWT)
 * [x] User Management (CRUD)
-* [x] Role-Based Authorization
-* [ ] Suppliers
-* [ ] Purchases
-* [ ] Ingredient Inventory
-* [ ] Products
-* [ ] Recipes
-* [ ] Production
+* [x] Role-Based Authorization (RBAC)
+* [x] Suppliers (CRUD)
+* [x] Ingredients (CRUD)
+* [x] Products (CRUD)
+* [x] Purchases
+* [x] Purchase Items
+* [x] Automatic Ingredient Stock Update
 * [ ] Customers
 * [ ] Orders (POS)
 * [ ] Payments
 * [ ] Reports
+* [ ] Admin Dashboard
+* [ ] Deployment
 
 ## Author
 
